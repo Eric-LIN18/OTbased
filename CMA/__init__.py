@@ -20,7 +20,7 @@ from .lightweight_convolution import LightweightConv, LightweightConv1dTBC
 from .linearized_convolution import LinearizedConvolution
 from .logsumexp_moe import LogSumExpMoE
 from .mean_pool_gating_network import MeanPoolGatingNetwork
-from .multihead_attention import MultiheadAttention, MultimodelMultiheadAttention, MultiheadAttention_Image
+from .multihead_attention import MultiheadAttention, MultimodelMultiheadAttention, MultiheadOTAttention
 from .positional_embedding import PositionalEmbedding
 from .scalar_bias import ScalarBias
 from .sinusoidal_positional_embedding import SinusoidalPositionalEmbedding
@@ -29,7 +29,6 @@ from .transformer_sentence_encoder import TransformerSentenceEncoder
 from .unfold import unfold1d
 from .transformer_layer import TransformerDecoderLayer, TransformerEncoderLayer
 from .vggblock import VGGBlock
-
 
 __all__ = [
     'AdaptiveInput',
@@ -53,8 +52,8 @@ __all__ = [
     'LogSumExpMoE',
     'MeanPoolGatingNetwork',
     'MultiheadAttention',
-    'MultiheadAttention_Image',
     'MultimodelMultiheadAttention',
+    'MultiheadOTAttention',
     'PositionalEmbedding',
     'ScalarBias',
     'SinusoidalPositionalEmbedding',
